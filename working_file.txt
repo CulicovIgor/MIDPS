@@ -1,5 +1,5 @@
-This is first file.
+This is first file (beta edition)
 ***
-place for some text
+place for some interesting text
 
 ***
