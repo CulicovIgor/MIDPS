@@ -1,0 +1,98 @@
+object Form1: TForm1
+  Left = 208
+  Top = 126
+  Width = 345
+  Height = 354
+  Caption = 'MIDPS'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 16
+    Top = 8
+    Width = 90
+    Height = 13
+    Caption = 'Data si ora curente'
+  end
+  object PaintBox1: TPaintBox
+    Left = 72
+    Top = 64
+    Width = 201
+    Height = 201
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Button1: TButton
+    Left = 160
+    Top = 24
+    Width = 65
+    Height = 25
+    Caption = 'Start'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 232
+    Top = 24
+    Width = 65
+    Height = 25
+    Caption = 'Stop'
+    Enabled = False
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 248
+    Top = 280
+    Width = 65
+    Height = 25
+    Caption = 'Exit'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Edit1: TEdit
+    Left = 8
+    Top = 32
+    Width = 113
+    Height = 21
+    TabOrder = 3
+  end
+  object Panel1: TPanel
+    Left = 16
+    Top = 64
+    Width = 33
+    Height = 100
+    Caption = 'Panel1'
+    Color = clBackground
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMenuText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Panel2: TPanel
+    Left = 16
+    Top = 160
+    Width = 33
+    Height = 100
+    Color = clAppWorkSpace
+    TabOrder = 5
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer2Timer
+    Top = 24
+  end
+end
